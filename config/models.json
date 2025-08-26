@@ -1,0 +1,700 @@
+{
+  "models": {
+    "gpt-4o": {
+      "id": "gpt-4o",
+      "name": "GPT-4o",
+      "description": "جدیدترین و قدرتمندترین مدل GPT-4 با قابلیت‌های پیشرفته",
+      "type": "chat",
+      "version": "2024-08-06",
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "function_calling": true,
+        "json_mode": true,
+        "streaming": true
+      },
+      "limits": {
+        "max_tokens": 4096,
+        "context_length": 128000,
+        "max_completion_tokens": 16384,
+        "input_tokens_limit": 128000,
+        "output_tokens_limit": 16384
+      },
+      "pricing": {
+        "input_per_1k": 0.0025,
+        "output_per_1k": 0.01,
+        "currency": "USD"
+      },
+      "parameters": {
+        "temperature": {
+          "default": 1.0,
+          "min": 0.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "کنترل خلاقیت پاسخ‌ها (0 = قطعی، 2 = خلاقانه)"
+        },
+        "top_p": {
+          "default": 1.0,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "کنترل تنوع کلمات انتخابی"
+        },
+        "presence_penalty": {
+          "default": 0.0,
+          "min": -2.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "جلوگیری از تکرار موضوعات"
+        },
+        "frequency_penalty": {
+          "default": 0.0,
+          "min": -2.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "جلوگیری از تکرار کلمات"
+        }
+      },
+      "recommended_for": [
+        "تحلیل تصاویر",
+        "برنامه‌نویسی پیشرفته",
+        "تحلیل اسناد",
+        "ریاضیات پیچیده",
+        "ترجمه دقیق"
+      ],
+      "strengths": [
+        "درک عمیق متن",
+        "تحلیل تصاویر با کیفیت بالا",
+        "استدلال منطقی قوی",
+        "کدنویسی پیشرفته",
+        "پاسخ‌دهی سریع"
+      ],
+      "use_cases": [
+        "مشاوره تخصصی",
+        "تحلیل داده‌های پیچیده",
+        "آموزش و تدریس",
+        "پژوهش علمی",
+        "توسعه نرم‌افزار"
+      ],
+      "languages": [
+        "فارسی",
+        "انگلیسی",
+        "عربی",
+        "فرانسوی",
+        "آلمانی",
+        "اسپانیایی",
+        "چینی",
+        "ژاپنی",
+        "کره‌ای",
+        "روسی"
+      ],
+      "release_date": "2024-08-06",
+      "status": "stable",
+      "tags": ["latest", "multimodal", "vision", "premium"]
+    },
+    
+    "gpt-4o-mini": {
+      "id": "gpt-4o-mini",
+      "name": "GPT-4o Mini",
+      "description": "نسخه کوچک و سریع GPT-4o برای استفاده‌های روزانه",
+      "type": "chat",
+      "version": "2024-07-18",
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "function_calling": true,
+        "json_mode": true,
+        "streaming": true
+      },
+      "limits": {
+        "max_tokens": 4096,
+        "context_length": 128000,
+        "max_completion_tokens": 16384,
+        "input_tokens_limit": 128000,
+        "output_tokens_limit": 16384
+      },
+      "pricing": {
+        "input_per_1k": 0.00015,
+        "output_per_1k": 0.0006,
+        "currency": "USD"
+      },
+      "parameters": {
+        "temperature": {
+          "default": 1.0,
+          "min": 0.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "کنترل خلاقیت پاسخ‌ها"
+        },
+        "top_p": {
+          "default": 1.0,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "کنترل تنوع پاسخ‌ها"
+        },
+        "presence_penalty": {
+          "default": 0.0,
+          "min": -2.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "کاهش تکرار موضوعات"
+        },
+        "frequency_penalty": {
+          "default": 0.0,
+          "min": -2.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "کاهش تکرار کلمات"
+        }
+      },
+      "recommended_for": [
+        "گفتگوهای روزانه",
+        "سوالات سریع",
+        "خلاصه‌سازی",
+        "ترجمه",
+        "کدنویسی ساده"
+      ],
+      "strengths": [
+        "سرعت بالا",
+        "هزینه کم",
+        "کیفیت خوب",
+        "پاسخ‌دهی سریع"
+      ],
+      "use_cases": [
+        "چت‌بات‌های روزانه",
+        "پاسخ‌گویی سریع",
+        "کاربردهای تجاری",
+        "آموزش پایه"
+      ],
+      "languages": [
+        "فارسی",
+        "انگلیسی",
+        "عربی",
+        "فرانسوی",
+        "آلمانی",
+        "اسپانیایی"
+      ],
+      "release_date": "2024-07-18",
+      "status": "stable",
+      "tags": ["fast", "economical", "vision", "recommended"]
+    },
+
+    "gpt-4-turbo": {
+      "id": "gpt-4-turbo",
+      "name": "GPT-4 Turbo",
+      "description": "نسخه بهبود یافته GPT-4 با پردازش سریع‌تر",
+      "type": "chat",
+      "version": "2024-04-09",
+      "capabilities": {
+        "text": true,
+        "vision": true,
+        "audio": false,
+        "function_calling": true,
+        "json_mode": true,
+        "streaming": true
+      },
+      "limits": {
+        "max_tokens": 4096,
+        "context_length": 128000,
+        "max_completion_tokens": 4096,
+        "input_tokens_limit": 128000,
+        "output_tokens_limit": 4096
+      },
+      "pricing": {
+        "input_per_1k": 0.01,
+        "output_per_1k": 0.03,
+        "currency": "USD"
+      },
+      "parameters": {
+        "temperature": {
+          "default": 1.0,
+          "min": 0.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "میزان خلاقیت در پاسخ‌ها"
+        },
+        "top_p": {
+          "default": 1.0,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "تنوع در انتخاب کلمات"
+        },
+        "presence_penalty": {
+          "default": 0.0,
+          "min": -2.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "کاهش تکرار موضوعات"
+        },
+        "frequency_penalty": {
+          "default": 0.0,
+          "min": -2.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "کاهش تکرار کلمات"
+        }
+      },
+      "recommended_for": [
+        "تحلیل متون طولانی",
+        "برنامه‌نویسی",
+        "تحقیق و پژوهش",
+        "نوشتن حرفه‌ای"
+      ],
+      "strengths": [
+        "دقت بالا",
+        "درک عمیق متن",
+        "کدنویسی دقیق",
+        "تحلیل پیچیده"
+      ],
+      "use_cases": [
+        "مشاوره تخصصی",
+        "تحلیل اسناد",
+        "توسعه نرم‌افزار",
+        "تحقیقات علمی"
+      ],
+      "languages": [
+        "فارسی",
+        "انگلیسی",
+        "عربی",
+        "فرانسوی",
+        "آلمانی"
+      ],
+      "release_date": "2024-04-09",
+      "status": "stable",
+      "tags": ["turbo", "vision", "reliable"]
+    },
+
+    "gpt-4": {
+      "id": "gpt-4",
+      "name": "GPT-4",
+      "description": "مدل اصلی GPT-4 با کیفیت بالا",
+      "type": "chat",
+      "version": "0613",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "function_calling": true,
+        "json_mode": false,
+        "streaming": true
+      },
+      "limits": {
+        "max_tokens": 4096,
+        "context_length": 8192,
+        "max_completion_tokens": 4096,
+        "input_tokens_limit": 8192,
+        "output_tokens_limit": 4096
+      },
+      "pricing": {
+        "input_per_1k": 0.03,
+        "output_per_1k": 0.06,
+        "currency": "USD"
+      },
+      "parameters": {
+        "temperature": {
+          "default": 1.0,
+          "min": 0.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "کنترل خلاقیت پاسخ‌ها"
+        },
+        "top_p": {
+          "default": 1.0,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "کنترل تنوع کلمات"
+        },
+        "presence_penalty": {
+          "default": 0.0,
+          "min": -2.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "جلوگیری از تکرار موضوعات"
+        },
+        "frequency_penalty": {
+          "default": 0.0,
+          "min": -2.0,
+          "max": 2.2,
+          "step": 0.1,
+          "description": "جلوگیری از تکرار کلمات"
+        }
+      },
+      "recommended_for": [
+        "تحلیل متن",
+        "نوشتن خلاقانه",
+        "حل مسئله",
+        "مشاوره"
+      ],
+      "strengths": [
+        "دقت بالا",
+        "استدلال منطقی",
+        "درک عمیق زبان",
+        "پاسخ‌های مفصل"
+      ],
+      "use_cases": [
+        "کاربردهای حرفه‌ای",
+        "تحلیل و بررسی",
+        "آموزش",
+        "مشاوره تخصصی"
+      ],
+      "languages": [
+        "فارسی",
+        "انگلیسی",
+        "عربی",
+        "فرانسوی"
+      ],
+      "release_date": "2023-06-13",
+      "status": "stable",
+      "tags": ["classic", "reliable", "proven"]
+    },
+
+    "gpt-3.5-turbo": {
+      "id": "gpt-3.5-turbo",
+      "name": "GPT-3.5 Turbo",
+      "description": "مدل سریع و مقرون‌به‌صرفه برای کاربردهای عمومی",
+      "type": "chat",
+      "version": "0125",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "function_calling": true,
+        "json_mode": true,
+        "streaming": true
+      },
+      "limits": {
+        "max_tokens": 4096,
+        "context_length": 16385,
+        "max_completion_tokens": 4096,
+        "input_tokens_limit": 16385,
+        "output_tokens_limit": 4096
+      },
+      "pricing": {
+        "input_per_1k": 0.0005,
+        "output_per_1k": 0.0015,
+        "currency": "USD"
+      },
+      "parameters": {
+        "temperature": {
+          "default": 1.0,
+          "min": 0.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "میزان خلاقیت در پاسخ‌ها"
+        },
+        "top_p": {
+          "default": 1.0,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "کنترل تنوع پاسخ‌ها"
+        },
+        "presence_penalty": {
+          "default": 0.0,
+          "min": -2.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "کاهش تکرار مطالب"
+        },
+        "frequency_penalty": {
+          "default": 0.0,
+          "min": -2.0,
+          "max": 2.0,
+          "step": 0.1,
+          "description": "کاهش تکرار کلمات"
+        }
+      },
+      "recommended_for": [
+        "گفتگوهای عمومی",
+        "سوال و جواب",
+        "ترجمه",
+        "خلاصه‌سازی",
+        "کدنویسی ساده"
+      ],
+      "strengths": [
+        "سرعت بالا",
+        "هزینه کم",
+        "کارایی خوب",
+        "پاسخ‌دهی سریع"
+      ],
+      "use_cases": [
+        "چت‌بات‌های عمومی",
+        "پاسخ‌گویی خودکار",
+        "کمک در نوشتن",
+        "آموزش پایه"
+      ],
+      "languages": [
+        "فارسی",
+        "انگلیسی",
+        "عربی",
+        "فرانسوی",
+        "آلمانی",
+        "اسپانیایی"
+      ],
+      "release_date": "2024-01-25",
+      "status": "stable",
+      "tags": ["economical", "fast", "general-purpose", "popular"]
+    },
+
+    "o1-preview": {
+      "id": "o1-preview",
+      "name": "o1 Preview",
+      "description": "مدل پیشرفته با قابلیت استدلال عمیق و حل مسائل پیچیده",
+      "type": "reasoning",
+      "version": "2024-09-12",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "function_calling": false,
+        "json_mode": false,
+        "streaming": false,
+        "reasoning": true,
+        "complex_problem_solving": true
+      },
+      "limits": {
+        "max_tokens": 32768,
+        "context_length": 128000,
+        "max_completion_tokens": 32768,
+        "input_tokens_limit": 128000,
+        "output_tokens_limit": 32768,
+        "reasoning_tokens": 65536
+      },
+      "pricing": {
+        "input_per_1k": 0.015,
+        "output_per_1k": 0.06,
+        "currency": "USD"
+      },
+      "parameters": {
+        "temperature": {
+          "default": 1.0,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "کنترل محدود خلاقیت (مخصوص استدلال)"
+        }
+      },
+      "recommended_for": [
+        "ریاضیات پیشرفته",
+        "برنامه‌نویسی پیچیده",
+        "حل مسائل منطقی",
+        "تحلیل علمی",
+        "استدلال فلسفی"
+      ],
+      "strengths": [
+        "استدلال عمیق",
+        "حل مسائل پیچیده",
+        "دقت ریاضی بالا",
+        "تفکر گام‌به‌گام",
+        "تحلیل منطقی قوی"
+      ],
+      "use_cases": [
+        "پژوهش علمی",
+        "توسعه الگوریتم",
+        "تحلیل داده پیچیده",
+        "آموزش ریاضی",
+        "مشاوره تخصصی"
+      ],
+      "languages": [
+        "انگلیسی",
+        "فارسی",
+        "عربی",
+        "فرانسوی"
+      ],
+      "release_date": "2024-09-12",
+      "status": "preview",
+      "special_features": [
+        "Chain of Thought Reasoning",
+        "Step-by-step Problem Solving",
+        "Mathematical Proof Generation",
+        "Code Debugging and Optimization"
+      ],
+      "limitations": [
+        "عدم پشتیبانی از استریمینگ",
+        "زمان پاسخ‌دهی بیشتر",
+        "محدودیت در Function Calling",
+        "تمرکز بر استدلال منطقی"
+      ],
+      "tags": ["reasoning", "preview", "advanced", "mathematical", "slow"]
+    },
+
+    "o1-mini": {
+      "id": "o1-mini",
+      "name": "o1 Mini",
+      "description": "نسخه کوچک‌تر مدل o1 با سرعت بیشتر برای مسائل متوسط",
+      "type": "reasoning",
+      "version": "2024-09-12",
+      "capabilities": {
+        "text": true,
+        "vision": false,
+        "audio": false,
+        "function_calling": false,
+        "json_mode": false,
+        "streaming": false,
+        "reasoning": true,
+        "complex_problem_solving": true
+      },
+      "limits": {
+        "max_tokens": 16384,
+        "context_length": 128000,
+        "max_completion_tokens": 16384,
+        "input_tokens_limit": 128000,
+        "output_tokens_limit": 16384,
+        "reasoning_tokens": 32768
+      },
+      "pricing": {
+        "input_per_1k": 0.003,
+        "output_per_1k": 0.012,
+        "currency": "USD"
+      },
+      "parameters": {
+        "temperature": {
+          "default": 1.0,
+          "min": 0.0,
+          "max": 1.0,
+          "step": 0.1,
+          "description": "کنترل خلاقیت در استدلال"
+        }
+      },
+      "recommended_for": [
+        "ریاضی متوسط",
+        "برنامه‌نویسی عمومی",
+        "حل مسائل منطقی",
+        "تحلیل داده",
+        "کدنویسی پیشرفته"
+      ],
+      "strengths": [
+        "سرعت مناسب",
+        "هزینه کمتر از o1-preview",
+        "استدلال خوب",
+        "دقت قابل قبول"
+      ],
+      "use_cases": [
+        "آموزش برنامه‌نویسی",
+        "حل تمرینات ریاضی",
+        "تحلیل کد",
+        "مشاوره فنی"
+      ],
+      "languages": [
+        "انگلیسی",
+        "فارسی",
+        "عربی"
+      ],
+      "release_date": "2024-09-12",
+      "status": "preview",
+      "special_features": [
+        "Faster Reasoning",
+        "Code Analysis",
+        "Mathematical Problem Solving",
+        "Cost-Effective Reasoning"
+      ],
+      "limitations": [
+        "عدم پشتیبانی از استریمینگ",
+        "محدودیت در حجم خروجی",
+        "تمرکز بر مسائل متوسط"
+      ],
+      "tags": ["reasoning", "mini", "fast-reasoning", "economical"]
+    }
+  },
+
+  "categories": {
+    "chat": {
+      "name": "مدل‌های گفتگو",
+      "description": "مدل‌های مخصوص گفتگو و پاسخ‌گویی عمومی",
+      "models": ["gpt-4o", "gpt-4o-mini", "gpt-4-turbo", "gpt-4", "gpt-3.5-turbo"]
+    },
+    "reasoning": {
+      "name": "مدل‌های استدلال",
+      "description": "مدل‌های مخصوص حل مسائل پیچیده و استدلال منطقی",
+      "models": ["o1-preview", "o1-mini"]
+    },
+    "vision": {
+      "name": "مدل‌های بینایی",
+      "description": "مدل‌هایی که قابلیت تحلیل تصاویر دارند",
+      "models": ["gpt-4o", "gpt-4o-mini", "gpt-4-turbo"]
+    },
+    "economical": {
+      "name": "مدل‌های اقتصادی",
+      "description": "مدل‌های مقرون‌به‌صرفه برای استفاده روزانه",
+      "models": ["gpt-4o-mini", "gpt-3.5-turbo", "o1-mini"]
+    },
+    "premium": {
+      "name": "مدل‌های پریمیوم",
+      "description": "قدرتمندترین مدل‌ها برای کاربردهای حرفه‌ای",
+      "models": ["gpt-4o", "gpt-4-turbo", "o1-preview"]
+    }
+  },
+
+  "default_settings": {
+    "recommended_model": "gpt-4o-mini",
+    "fallback_model": "gpt-3.5-turbo",
+    "streaming_supported": ["gpt-4o", "gpt-4o-mini", "gpt-4-turbo", "gpt-4", "gpt-3.5-turbo"],
+    "vision_supported": ["gpt-4o", "gpt-4o-mini", "gpt-4-turbo"],
+    "function_calling_supported": ["gpt-4o", "gpt-4o-mini", "gpt-4-turbo", "gpt-4", "gpt-3.5-turbo"],
+    "max_context_warning": 100000,
+    "cost_warning_threshold": 0.1
+  },
+
+  "usage_tips": {
+    "gpt-4o": [
+      "بهترین انتخاب برای تحلیل تصاویر",
+      "عالی برای پروژه‌های پیچیده",
+      "مناسب برای کاربردهای حرفه‌ای"
+    ],
+    "gpt-4o-mini": [
+      "بهترین انتخاب برای استفاده روزانه",
+      "سرعت و کیفیت مناسب",
+      "هزینه بسیار کم"
+    ],
+    "gpt-3.5-turbo": [
+      "مناسب برای سوالات ساده",
+      "سریع و ارزان",
+      "خوب برای گفتگوهای عمومی"
+    ],
+    "o1-preview": [
+      "برای مسائل ریاضی پیچیده",
+      "نیاز به زمان بیشتری دارد",
+      "دقت بسیار بالا در استدلال"
+    ],
+    "o1-mini": [
+      "تعادل خوب بین سرعت و دقت",
+      "مناسب برای کدنویسی",
+      "ارزان‌تر از o1-preview"
+    ]
+  },
+
+  "persian_specific": {
+    "recommended_for_persian": ["gpt-4o", "gpt-4o-mini", "gpt-4-turbo"],
+    "persian_quality_ranking": [
+      "gpt-4o",
+      "gpt-4o-mini", 
+      "gpt-4-turbo",
+      "gpt-4",
+      "o1-preview",
+      "gpt-3.5-turbo",
+      "o1-mini"
+    ],
+    "persian_features": {
+      "rtl_support": true,
+      "persian_calendar": true,
+      "cultural_context": true,
+      "persian_poetry": ["gpt-4o", "gpt-4-turbo", "gpt-4"],
+      "persian_grammar": ["gpt-4o", "gpt-4o-mini", "gpt-4-turbo", "gpt-4"]
+    }
+  },
+
+  "metadata": {
+    "version": "2.1.0",
+    "last_updated": "2024-08-26",
+    "api_version": "v1",
+    "total_models": 6,
+    "supported_languages": ["fa", "en", "ar", "fr", "de", "es", "zh", "ja", "ko", "ru"],
+    "update_frequency": "monthly",
+    "source": "OpenAI Official API Documentation"
+  }
+}
