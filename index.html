@@ -65,6 +65,19 @@
     
     <!-- Markdown Parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- Meta for iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ChatGPT Advanced">
+    
+    <!-- Meta for Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="ChatGPT Advanced">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#4f46e5">
+    <meta name="msapplication-TileColor" content="#4f46e5">
 </head>
 <body class="loading">
     <!-- Loading Screen -->
@@ -809,9 +822,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
 
     <!-- Application Scripts -->
-  <script src="./scripts/utils.js"></script>
-<script src="./scripts/api.js"></script>
-<script src="./scripts/main.js"></script>
+    <script src="./scripts/utils.js"></script>
+    <script src="./scripts/api.js"></script>
+    <script src="./scripts/ui.js"></script>
+    <script src="./scripts/main.js"></script>
 
     <!-- Service Worker Registration -->
     <script>
@@ -919,18 +933,5 @@
             observer.observe({entryTypes: ['navigation']});
         }
     </script>
-
-    <!-- Meta for iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="ChatGPT Advanced">
-    
-    <!-- Meta for Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="ChatGPT Advanced">
-    
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#4f46e5">
-    <meta name="msapplication-TileColor" content="#4f46e5">
 </body>
 </html>
